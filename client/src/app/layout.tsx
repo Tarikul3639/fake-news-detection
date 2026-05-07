@@ -4,7 +4,7 @@ import "./globals.css";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
-const BASE_URL = "https://fake-guard.vercel.app/"; 
+const BASE_URL = "https://fake-guard.vercel.app/";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -16,6 +16,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+
+  verification: {
+    google: "wX9p5QSBg-V35tiEQef35nhxekmLe0tuCjPcXo04Yxo",
+  },
 
   title: {
     default: "FakeGuard | AI-Powered Fake News Detector",
