@@ -32,3 +32,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 # Run the container
 # docker run -p 8000:8000 fakeguard-api
+
+
+# git init
+# git remote add origin https://huggingface.co/spaces/tarikulislam3639/fakeguard-api

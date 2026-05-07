@@ -1,0 +1,6 @@
+# ml/*.pkl
+datasets/
+notebooks/
+__pycache__/
+.env
+.env.*
