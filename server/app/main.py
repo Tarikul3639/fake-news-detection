@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.schemas import NewsInput, PredictionResponse
 from app.model import model, tfidf
 from app.utils import clean_text
+import traceback
 # import os
 # from dotenv import load_dotenv
 # load_dotenv()
@@ -56,4 +57,6 @@ def predict(news: NewsInput):
     except HTTPException:
         raise
     except Exception as e:
+        print("ERROR:", str(e))
+        print(traceback.format_exc())
         raise HTTPException(status_code=500, detail=str(e))
