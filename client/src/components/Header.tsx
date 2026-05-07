@@ -1,7 +1,7 @@
 export default function Header() {
     return (
 
-        <div className="sticky top-3 sm:top-5 flex items-center gap-3 mb-6 bg-gray-950 border-b border-gray-800 pb-4">
+        <div className="sticky top-0 flex items-center gap-3 mb-6 bg-gray-950 border-b border-gray-800 p-4">
             <div className="w-9 h-9">
                 <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
                     <rect width="44" height="44" rx="10" fill="#E24B4A" />

@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.schemas import NewsInput, PredictionResponse
 from app.model import model, tfidf
 from app.utils import clean_text
+import os 
+from dotenv import load_dotenv
 
 app = FastAPI(
     title="FakeGuard API",
@@ -12,10 +14,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://fakeguard.vercel.app",  # TODO: Update with actual frontend URL
-    ],
+    allow_origins=os.getenv("CORS_ORIGINS", "").split(","),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

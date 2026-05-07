@@ -16,7 +16,7 @@ export type PredictionResult = {
 export type Status = "idle" | "loading" | "done" | "error";
 
 export default function Home() {
-  // const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+  // ── Config ───────────────────────────────────────────────────────────────
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
   // ── State ───────────────────────────────────────────────────────────────
@@ -66,7 +66,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gray-950 text-white">
-      <div className="max-w-2xl mx-auto px-5 py-5 md:py-8 lg:py-10">
+      <div className="max-w-2xl mx-auto p-5">
         <Header />
 
         <TextInput

@@ -4,7 +4,7 @@ import "./globals.css";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
-const BASE_URL = "https://fakeguard.vercel.app"; // TODO: Update with your actual deployed URL when available
+const BASE_URL = "https://fake-guard.vercel.app/"; 
 
 export const viewport: Viewport = {
   width: "device-width",
